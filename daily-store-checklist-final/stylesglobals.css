@@ -1,0 +1,114 @@
+/* Sainsbury's Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --orange: #F36A21;
+  --orange-dark: #E55D18;
+  --bg-light: #FFF7F2;
+  --text-dark: #222;
+  --border-light: #E5E5E5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+/* Buttons */
+
+button {
+  background: var(--orange);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: var(--orange-dark);
+}
+
+/* Cards */
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border: 1px solid var(--border-light);
+}
+
+/* Inputs */
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-light);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Header */
+
+.app-header {
+  background: var(--orange);
+  color: white;
+  padding: 16px 24px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.app-header img {
+  height: 40px;
+}
+
+.section-title {
+  color: var(--orange);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Checklist */
+
+.task {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.task.done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Layout */
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.login-box {
+  width: 340px;
+}
