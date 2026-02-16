@@ -3,10 +3,12 @@ export const metadata = {
   description: "Store management checklist app",
 };
 
+import "../styles/globals.css";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
+      <body>
         {children}
       </body>
     </html>
